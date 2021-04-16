@@ -11,15 +11,18 @@
 			background-image: linear-gradient(45deg,#ffffff,#2d597d);/*Modificar a gusto*/
 			background-size: cover;
 			background-repeat: no-repeat;
+			overflow-x: hidden;
 		}
 
 		content{
 			margin: 20px;
 			display: grid;
-			grid-template-areas: "header header form"
-								 "info info form"
-								 "image image form"
+			grid-template-areas: "header header formWpp"
+								 "info info formEmail"
+								 "info info formEmail"
+								 "image image formEmail"
 								 "review review review";
+		    grid-template-columns: repeat(3, 1fr);
 			grid-gap: 10px;
 		}
 
@@ -35,9 +38,15 @@
 		#Image-warp{
 			grid-area:image;
 		}
-		#Form-warp{
-			grid-area:form;
+
+
+		#call-warp{
+			grid-area:formWpp;
 		}
+		form.form_contact, .gracias{
+			grid-area:formEmail;
+		}
+
 		#Review-warp{
 			grid-area:review;
 			background-color: white;
@@ -151,7 +160,7 @@
 		/*...................form*/
 
 		form.form_contact,.gracias{
-		    width: 90%;
+		    width: inherit;
 		    padding: 30px 40px;
 		    background-color: white;
 		    border-radius: 15px;
@@ -236,13 +245,17 @@
 		form.form_contact input[type="submit"]:hover{
 		    background: #3371B6;
 		}
+
+		.gracias{
+			align-self: center;
+		}
 		.gracias h2{
 			margin: auto;
 			text-align: center;
 		}
 		/*-------CLASES GENERALES-----*/
-		.padding1{
-			padding: 20px;
+		.margin1{
+			margin: 20px;
 		}
 
 
@@ -297,10 +310,12 @@
 
         @media screen and (max-width: 1024px){
         	content{
-			grid-template-areas: "header form"
-								 "info form"
+			grid-template-areas: "header formWpp"
+								 "info formEmail"
 								 "image image"
 								 "review review";
+
+		    grid-template-columns: repeat(2,1fr);
 			}
 			header{
 			flex-direction: column;
@@ -317,10 +332,13 @@
 
         	content{
 			grid-template-areas: "header"
+								 "formWpp"
 								 "info"
-								 "form"
+								 "formEmail"
 								 "image"
 								 "review";
+
+		    grid-template-columns: 1fr;
 			}
 
 

@@ -27,9 +27,9 @@
 			<img src="imgs/img2.jpg" height="150px">
 			<img src="imgs/img3.jpg" height="150px">
 		</div>
-		<div id="Form-warp" class="padding1">
 
-			<div id="call-warp">
+					<!--Contact Form to wpp and cellphone number>-->
+			<div id="call-warp" >
 		        <section class="call_info">
 		            <u><h4>Horarios de atencion:</h4></u>
 		            <br>
@@ -45,6 +45,9 @@
 					<!--<a id="btnD" class="btn-llamada red"  href="#" disabled> ---Cerrado Ahora--- </a>-->
 		      	 </section>
 			</div>
+
+
+								<!--Contact Form to email>-->
 
 			<form action="gracias.php" method="POST" class="form_contact">
 				<div class="user_info">
@@ -79,7 +82,8 @@
 						<input type="submit" name="btn-enviar" value="Enviar">
 					</div>
 			</form>
-		</div>
+
+
 		<div id="Review-warp" class="padding1" style="display: none">
 			<h1>texto</h1>
 		</div>

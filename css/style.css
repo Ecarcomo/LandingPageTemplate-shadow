@@ -135,20 +135,10 @@
 
 		.call_info{
 		    position: relative;
-
 		    display: flex;
 		    flex-direction: column;
 		    align-items: center;
 		    justify-content: center;
-		}
-
-
-		.call_action{
-		    display: flex;
-		    flex-direction: column;
-		    align-items: center;
-		    justify-content: center;
-		    padding: 30px 40px;
 		}
 
 		.call_info u,.call_info ul {
@@ -156,6 +146,18 @@
 		    z-index: 2;
 		    color: #fff;
 		}
+
+		.call_action{
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    padding: 10px 40px;
+		}
+		.call_action a,.call_action p{
+		    position: relative
+		}
+		
 
 		/*...................form*/
 

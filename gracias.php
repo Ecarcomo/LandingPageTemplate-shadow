@@ -84,18 +84,19 @@
 					<!--Contact Form to wpp and cellphone number>-->
 			<div id="call-warp">
 		        <section class="call_info">
-		            <u><h4>Horarios de atencion:</h4></u>
+		        	<br>
+		            <u><h4>Contacto vía Whatsapp</h4></u>
 		            <br>
 					<ul>
-						<li>De Lun a Vier -> 9 a 13 hs</li>
-						<li style="font-weight: 600;color:#33f">Técnico Emmanuel C.</li>
-					</ul>
+						<li>Servicio Técnico de PC a Domicilio ó Remoto</li>
+						<li style="font-weight: 600;color:#04040c">Técnico Emmanuel C.</li>
 					</ul>
 					<br>
 		        </section>
 
 		      	<section class="call_action">
-		           <a style="font-weight: 600;color:#fff" id="btnE" class="btn-llamada green" href="https://wa.me/5491135737686"><i class="fa fa-whatsapp"></i> 11-3573-7686 </a>
+		            <a style="font-weight: 600;color:#fff" id="btnE" class="btn-llamada green" href="https://wa.me/5491135737686"><i class="fa fa-whatsapp"></i> 11-3573-7686 </a>
+		            <p style="font-size:13px;">E-mail: <a href="mailto:vixionsolucionesinformaticas@gmail.com">vixionsolucionesinformaticas@gmail.com</a></p>
 					<!--<a id="btnD" class="btn-llamada red"  href="#" disabled> ---Cerrado Ahora--- </a>-->
 		      	 </section>
 			</div>

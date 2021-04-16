@@ -79,8 +79,9 @@
 			<img src="imgs/img2.jpg" height="150px">
 			<img src="imgs/img3.jpg" height="150px">
 		</div>
-		<div id="Form-warp" class="padding1">
 
+
+					<!--Contact Form to wpp and cellphone number>-->
 			<div id="call-warp">
 		        <section class="call_info">
 		            <u><h4>Horarios de atencion:</h4></u>
@@ -98,11 +99,13 @@
 					<!--<a id="btnD" class="btn-llamada red"  href="#" disabled> ---Cerrado Ahora--- </a>-->
 		      	 </section>
 			</div>
-
+				<!--Confirm Send email>-->
 			<div class="gracias">
 	        	<h2>Gracias Por Comunicarte! Nos Contactaremos a la brevedad</h2>
 	        </div>
-		</div>
+	
+
+
 		<div id="Review-warp" class="padding1" style="display: none">
 			<h1>texto</h1>
 		</div>

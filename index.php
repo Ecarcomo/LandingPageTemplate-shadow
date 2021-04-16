@@ -1,115 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-	<meta http-equiv="Expires" content="0">
-	<meta http-equiv="Last-Modified" content="0">
-	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-		    
-
-   
-    <link rel="shortcut icon" type="image/png" href="imgs/IsoLogo.png"/>
-	<title>>Marca Empresa - Emmanuel Carcomo</title>
-	<link rel="stylesheet" href="css/estilos.css">
-
-	<script src="https://kit.fontawesome.com/d279f26f0f.js" crossorigin="anonymous"></script>
-</head>
+<?php include("head.php"); ?>
 <body>
 	<content>
 		<header>
-			<!--<h1 id="title"><center>Nombre de empresa</center></h1> -->
-			<img src="imgs/logo.png" width="200px">
+			<img src="imgs/logo.png" height="80px">
+			<h2>Soluciones Informáticas</h2>
 		</header>
-		
-		<hr>
-		<br>
-		<section class="info_wrap">
-				<div class="sub-wrap-text">
-					<p>Curabitur at nulla luctus arcu semper accumsan. Donec malesuada rhoncus eros eget iaculis. Nullam nibh ligula, consectetur vitae enim eu, tincidunt tristique eros. Etiam ut dolor pellentesque, hendrerit justo nec, ullamcorper libero. Nullam facilisis nibh congue erat molestie consectetur ac quis augue. Nunc at lorem dapibus, bibendum elit eget, euismod ipsum. Phasellus blandit massa sit amet lacus scelerisque, eget imperdiet nisl volutpat. Nam nec neque augue. Nullam pretium erat magna, sed sagittis nisi lacinia id.</p>
-					<br>
-					<u><h4>Nuestros servicios:</h4></u>
-					<ul>
-						<li>Servicio 1</li>
-						<li>Servicio 2</li>
-						<li>Servicio 3</li>
-					</ul>
-				</div>
-				<div class="sub-wrap-imgs">
-					<img id="img1" src="imgs/img1.jpg" width="200" class="border-rad">
-					<img id="img2" src="imgs/fondo.jpg" width="200" class="border-rad">
-				</div>
-		</section>
+		<div id="Info-warp" class="padding1">
+			<p>Servicio tecnico a domicilio de equipos informáticos de particulares y empresas.</p>
+			<br>
+			<u><h4>Servicios más destacados:</h4></u>
+			<ul>
+				<li>Optimizacion y eliminacion de malware</li>
+				<li>BackUps, Formateo e instalación de SO's, antivirus y software's</li>
+				<li>Instalacion de paquete Office</li>
+				<li>Limpieza profunda de PC</li>
+				<li>Reparaciones de PC</li>
+				<li>Armado de PC's y cambios de Hardware</li>
+			</ul>
+			<br>
+			<p><strong>Tambien se ofrece servicios más complejos como armado de redes informáticas ,servidores y puntos de acceso.</strong></p>
+		</div>
+		<div id="Image-warp">
+			<img src="imgs/img1.jpg" height="150px">
+			<img src="imgs/img2.jpg" height="150px">
+			<img src="imgs/img3.jpg" height="150px">
+		</div>
+		<div id="Form-warp" class="padding1">
 
-
-
-		 <section class="call_wrap">
+			<div id="call-warp">
 		        <section class="call_info">
 		            <u><h4>Horarios de atencion:</h4></u>
+		            <br>
 					<ul>
-						<li>De Lun a Vier -> 9:30 a 18:30hs</li>
-						<li>Sabados -> 9:30 a 12:30hs</li>
+						<li>De Lun a Vier -> 9 a 13 hs</li>
+						<li style="font-weight: 600;color:#33f">Técnico Emmanuel C.</li>
 					</ul>
+					<br>
 		        </section>
 
 		      	<section class="call_action">
-		           <a id="btnE" class="btn-llamada green" href="tel:+xxxxxxxxxx"> ---LLAMADA DIRECTA--- </a>
-					<a id="btnD" class="btn-llamada red"  href="#" disabled> ---Temporalmente cerrado--- </a>
+		            <a style="font-weight: 600;color:#fff" id="btnE" class="btn-llamada green" href="https://wa.me/5491135737686"><i class="fa fa-whatsapp"></i> 11-3573-7686 </a>
+					<!--<a id="btnD" class="btn-llamada red"  href="#" disabled> ---Cerrado Ahora--- </a>-->
 		      	 </section>
+			</div>
 
-	    </section>
-
-
-
-		 <section class="form_wrap">
-		        <section class="cantact_info">
-		            <section class="info_title">
-		                <span class="far fa-id-card"></span>
-		                <h2>INFORMACION<br>DE CONTACTO</h2>
-		            </section>
-		            <section class="info_items">
-		                <!--<p><span class="far fa-envelope"></span> info.contact@gmail.com</p>-->
-		                <p><span class="fas fa-phone-square-alt"></span>+54 11 XXXX XXXX</p>
-		            </section>
-		        </section>
-
-		       <form action="form.php" name="f1-basico" method="POST" class="form_contact">
-			       	<div class="user_info">
-						<label>Nombre:</label>
+			<form action="gracias.php" method="POST" class="form_contact">
+				<div class="user_info">
+						<label>Nombre: <p>requerido</p></label>
 						<input type="text" name="campo-nombre" placeholder="Su nombre" required>
-						<label>Email:</label>
+						<label>Email: <p>requerido</p></label>
 						<input type="email" name="campo-email" placeholder="Email" required>
 						<label>Telefono:</label>
 						<input type="number" name="campo-telefono" placeholder="Numero telefonico">
-						<label>Tipo de Consulta:</label>
-						<select name="campo-options">
-							<option value="Reparacion"> Reparacion de Pieza</option>
-							<option value="Fabricacion"> Fabricacion de Pieza</option>
-							<option value="Roscados"> Roscados</option>
-							<option value="Otros"> Otros</option>
+						<label>Tipo de cliente: <p>requerido</p></label>
+						<div id="type">
+							<div><label for="choice-1">Particular</label><input type="radio" name="campo-tipo-cliente" value="Particular" id="choice-1" checked></div>
+							<div><label for="choice-1">Profesional</label><input type="radio" name="campo-tipo-cliente" value="Profesional" id="choice-1"></div>
+							<div><label for="choice-1">Pyme/Empresa</label><input type="radio" name="campo-tipo-cliente" value="Pyme/Empresa" id="choice-1"></div>
+						</div>
+						<label>Tipo de Consulta: <p>requerido</p></label>
+						<select name="campo-options" required>
+							<option value="Optimizacion/Virus">Optimizacion/Eliminacion Virus</option>
+							<option value="Bkp/Inst">BackUps ,Instalacion de Software</option>
+							<option value="Inst-SO">Instalacion Sistema Operativo</option>
+							<option value="Reparacion">Reparacion de PC</option>
+							<option value="Limpieza">Limpieza de PC</option>
+							<option value="Armado/Mod-PC">Armado/Modificacion de PC</option>
+							<option value="Wifi">Redes Wifi</option>
+							<option value="Server">Armado de Server</option>
+							<option value="Varios">Varios</option>
+							<option value="Otro">Otro</option>
 						</select>
 						<br>
-						<label>Texto:</label>
-						<textarea name="campo-texto" placeholder="Su mensaje aqui"  rows="6" cols="25" required></textarea>
+						<label>Texto: <p>requerido</p></label>
+						<textarea name="campo-texto" placeholder="Describa más detalladamente su consulta/inconveniente para un presupuesto aproximado"  rows="6" cols="25" required></textarea>
 						<input type="submit" name="btn-enviar" value="Enviar">
 					</div>
-				</form>
-
-	    </section>
-
-
-		<section id="section-reviews">
-			
-		</section>
+			</form>
+		</div>
+		<div id="Review-warp" class="padding1" style="display: none">
+			<h1>texto</h1>
+		</div>
 	</content>
 	<footer>
-		<p style="text-align: center;">Marca Empresa  2020 | Desing by DevAds</p>
+		<p style="text-align: center;">Vixion Soluciones Informaticas S.A.	2020 | Desing by <a href="https://devads.tech">DevAds</a></p>
 	</footer>
 
-
-	<script type="text/javascript" src="js/horario.js"></script>
+	<!--Float Whatsapp Button -->
+	<a href="https://api.whatsapp.com/send?phone=5491135737686&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20" class="float" target="_blank">
+	  <i class="fa fa-whatsapp my-float"></i>
+	</a>
+	<!--<script type="text/javascript" src="js/horario.js"></script>-->
 </body>
 </html>

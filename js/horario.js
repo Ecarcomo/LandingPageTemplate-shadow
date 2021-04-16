@@ -13,8 +13,8 @@
 		var _min = _hoy.getMinutes();
 
 		/*-------------Horarios---------- SE PUEDEN CAMBIAR MANUALMENTE*/
-		const H_Ap_semanal =9 , M_Ap_semanal =30;
-		const H_C_semanal =18 , M_C_semanal =30;
+		const H_Ap_semanal =9 , M_Ap_semanal =00;
+		const H_C_semanal =13 , M_C_semanal =00;
 
 		const H_Ap_sabado =9 , M_Ap_sabado =30;
 		const H_C_sabado =12 , M_C_sabado =30;
@@ -37,7 +37,7 @@
 				estadoSemanal();
 			break;
 			case "Sabado":
-				estadoSabado();
+				cerrado();
 			break;
 			case "Domingo":
 				cerrado();

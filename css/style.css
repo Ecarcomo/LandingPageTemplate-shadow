@@ -1,0 +1,363 @@
+
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+
+		body{
+			width: 100%;
+			background-image: linear-gradient(45deg,#ffffff,#2d597d);/*Modificar a gusto*/
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		content{
+			margin: 20px;
+			display: grid;
+			grid-template-areas: "header header form"
+								 "info info form"
+								 "image image form"
+								 "review review review";
+			grid-gap: 10px;
+		}
+
+
+
+		/*--------Grid Names--------*/
+		header{
+			grid-area: header;
+		}
+		#Info-warp{
+			grid-area:info;
+		}
+		#Image-warp{
+			grid-area:image;
+		}
+		#Form-warp{
+			grid-area:form;
+		}
+		#Review-warp{
+			grid-area:review;
+			background-color: white;
+		}
+
+		/*---Header custom------------*/
+		header{
+			display: flex;
+			flex-direction: row;
+			padding: 10px;
+			padding-bottom: 0;
+			align-items: center;
+		}
+		header h2{
+			margin-left: auto;
+			margin-right: auto;
+			text-transform: uppercase;
+			font-size: xx-large;
+			font-family: sans-serif;
+    		font-style: italic;
+    		-webkit-text-stroke: 1px navy;
+		}
+		
+		header img{
+			margin-right: auto;
+		}
+
+		/*---Info custom------------*/
+		#Info-warp{
+			display: flex;
+    		flex-direction: column;
+    		align-items: left;
+    		justify-content: center;
+   			font-size: x-large;
+    		color: black;
+    		padding: 40px;
+		}
+		/*------Images custom--------*/
+		#Image-warp{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		#Image-warp img{
+			margin:10px auto;
+			max-width: 250px;
+			border-radius: 10px;
+			-moz-box-shadow: 0px 0px 20px #000;
+			-webkit-box-shadow: 0px 0px 20px #000;
+			box-shadow: 0px 0px 20px #000;
+		}
+		/*------Form custom--------*/
+		#Form-warp{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		/*...................call*/
+		#call-warp{
+		    width: 100%;
+   			margin-bottom: 20px;
+		    display: flex;
+		    flex-direction: column;
+		    background-color: #fff;
+		    border-radius: 10px;
+		    overflow: hidden;
+		    -moz-box-shadow: 0px 0px 20px #000;
+			-webkit-box-shadow: 0px 0px 20px #000;
+			box-shadow: 0px 0px 20px #000;
+		}
+
+		.call_info::before{
+		    content: '';
+		    width: 100%;
+		    height: 100%;
+
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+
+		    background: #848484;
+		    opacity: 0.9;
+		}
+
+		.call_info{
+		    position: relative;
+
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+
+		.call_action{
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    padding: 30px 40px;
+		}
+
+		.call_info u,.call_info ul {
+		    position: relative;
+		    z-index: 2;
+		    color: #fff;
+		}
+
+		/*...................form*/
+
+		form.form_contact,.gracias{
+		    width: 90%;
+		    padding: 30px 40px;
+		    background-color: white;
+		    border-radius: 15px;
+		    -moz-box-shadow: 0px 0px 20px #000;
+			-webkit-box-shadow: 0px 0px 20px #000;
+			box-shadow: 0px 0px 20px #000;
+		}
+
+		form.form_contact h2,.gracias h2{
+			font-size: 25px;
+			font-weight: 600;
+			color: #303030;
+			margin-bottom: 30px;
+		}
+
+		form.form_contact .user_info{
+		    display: flex;
+		    flex-direction: column;
+		}
+
+		form.form_contact .user_info #type{
+		    display: flex;
+		    flex-direction: row;
+		}
+		form.form_contact .user_info #type div{
+		    margin: auto;
+		}
+		form.form_contact .user_info #type div label{
+		    font-size: small;
+		    font-weight: 400;
+		}
+
+		form.form_contact label{
+			display: flex;
+			flex-direction: row;
+		    font-weight: 600;
+		}
+		form.form_contact label p{
+			font-size: small;
+			color:red;
+			-webkit-color:red;
+		    font-weight: 600;
+		}
+
+		form.form_contact input,
+		form.form_contact textarea{
+		    width: 100%;
+		    padding: 8px 0px 5px;
+		    margin-bottom: 20px;
+
+		    border-radius: 5px;
+
+		    font-family: monospace;
+			color: #5A5A5A;
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		form.form_contact textarea{
+		    max-width: 100%;
+		    min-width: 100%;
+		    max-height: 90px;
+		    resize: none;
+		}
+
+		form.form_contact input[type="submit"]{
+		    width: 180px;
+			background: #69b911;
+			padding: 10px;
+			border: none;
+			border-radius: 25px;
+
+		    align-self: flex-end;
+
+		    color: #fff;
+			font-family: 'Open sans';
+			font-size: 16px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+
+		form.form_contact input[type="submit"]:hover{
+		    background: #3371B6;
+		}
+		.gracias h2{
+			margin: auto;
+			text-align: center;
+		}
+		/*-------CLASES GENERALES-----*/
+		.padding1{
+			padding: 20px;
+		}
+
+
+		/*=============BOTON DE LLAMADA=============*/
+
+        .btn-llamada
+        {
+            display: block;
+            position: absolute;
+            width: max-content;
+            padding: 10px 30px;
+            border-radius: 20px;
+            text-decoration: none;
+
+            font-family: monospace;
+            font-weight: 700;
+        }
+
+        .btn-llamada:hover
+        {
+            background-image: -webkit-linear-gradient(-45deg,#1FE6B5,#9BFEDF,#1FE6B5);
+        }
+
+        .green
+        {
+            background-image: -webkit-linear-gradient(-45deg,#4EB824,#8AC177,#4EB824);
+        }
+        .red
+        {
+            background-image: -webkit-linear-gradient(-45deg,#F81616,#FF9797,#F81616);
+        }
+
+
+
+
+
+
+
+
+
+        /*===============Media Querys================*/
+         @media screen and (max-width: 1600px){
+         	header{
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			}
+			header img{
+				margin-right: unset;
+			}
+         }
+
+        @media screen and (max-width: 1024px){
+        	content{
+			grid-template-areas: "header form"
+								 "info form"
+								 "image image"
+								 "review review";
+			}
+			header{
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			}
+			header img{
+				margin-right: unset;
+			}
+        }
+			
+        @media screen and (max-width: 768px){
+        	
+
+        	content{
+			grid-template-areas: "header"
+								 "info"
+								 "form"
+								 "image"
+								 "review";
+			}
+
+
+			header{
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			}
+			header img{
+				margin-right: unset;
+			}
+			#Image-warp{
+			flex-direction: column;
+			}
+			#Image-warp img {
+				height: 200px;
+			}
+
+        }
+
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}

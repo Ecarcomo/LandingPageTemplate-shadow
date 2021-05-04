@@ -333,6 +333,7 @@
         @media screen and (max-width: 1024px){
         	content{
 			grid-template-areas: "header formWpp"
+								"oferta formEmail"
 								 "info formEmail"
 								 "image image"
 								 "review review";
@@ -354,6 +355,7 @@
 
         	content{
 			grid-template-areas: "header"
+								"oferta"
 								 "formWpp"
 								 "info"
 								 "formEmail"

@@ -18,6 +18,7 @@
 			margin: 20px;
 			display: grid;
 			grid-template-areas: "header header formWpp"
+								"oferta oferta formEmail"
 								 "info info formEmail"
 								 "info info formEmail"
 								 "image image formEmail"
@@ -35,6 +36,11 @@
 		#Info-warp{
 			grid-area:info;
 		}
+
+		#offert{
+			grid-area:oferta;
+		}
+
 		#Image-warp{
 			grid-area:image;
 		}
@@ -51,6 +57,19 @@
 			grid-area:review;
 			background-color: white;
 		}
+
+		/*---OFERTA custom------------*/
+		#offert{
+			margin: 0;
+			text-align:center;
+			text-transform: uppercase;
+			color:#fd2b2b;
+			font-weight: 800;
+    		font-style: oblique;
+    		-webkit-text-stroke-width: 1px;
+    		-webkit-text-stroke-color: white;
+		}
+
 
 		/*---Header custom------------*/
 		header{
@@ -83,6 +102,7 @@
    			font-size: x-large;
     		color: black;
     		padding: 40px;
+    		padding-top: 0;
 		}
 		/*------Images custom--------*/
 		#Image-warp{

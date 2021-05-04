@@ -7,6 +7,9 @@
 			<img src="imgs/logo.png" height="80px">
 			<h2>Soluciones Informáticas</h2>
 		</header>
+
+		<h2 id="offert">20% OFF Docentes</h2>
+
 		<div id="Info-warp" class="padding1">
 			<p>Servicio tecnico a domicilio de equipos informáticos de particulares y empresas.</p>
 			<br>
@@ -36,13 +39,14 @@
 		            <br>
 					<ul>
 						<li>Servicio Técnico de PC a Domicilio ó Remoto</li>
-						<li style="font-weight: 600;color:#04040c">Técnico Emmanuel C.</li>
+						<!--<li style="font-weight: 600;color:#04040c">Técnico Emmanuel C.</li>-->
+						<li style="text-align:center;font-weight: 600;color:#04040c">Equipo VIXION S.I.</li>
 					</ul>
 					<br>
 		        </section>
 
 		      	<section class="call_action">
-		            <a style="font-weight: 600;color:#fff" id="btnE" class="btn-llamada green" href="https://wa.me/5491135737686"><i class="fa fa-whatsapp"></i> 11-3573-7686 </a>
+		            <a style="font-weight: 600;color:#fff" id="btnE" class="btn-llamada green" href="https://wa.me/5491136993373"><i class="fa fa-whatsapp"></i> 11-3699-3373 </a>
 		            <p style="font-size:13px;">E-mail: <a href="mailto:vixionsolucionesinformaticas@gmail.com">vixionsolucionesinformaticas@gmail.com</a></p>
 					<!--<a id="btnD" class="btn-llamada red"  href="#" disabled> ---Cerrado Ahora--- </a>-->
 		      	 </section>
@@ -95,7 +99,7 @@
 	</footer>
 
 	<!--Float Whatsapp Button -->
-	<a href="https://api.whatsapp.com/send?phone=5491135737686&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20" class="float" target="_blank">
+	<a href="https://api.whatsapp.com/send?phone=54911369933736&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20" class="float" target="_blank">
 	  <i class="fa fa-whatsapp my-float"></i>
 	</a>
 	<!--<script type="text/javascript" src="js/horario.js"></script>-->

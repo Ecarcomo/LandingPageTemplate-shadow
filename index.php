@@ -8,7 +8,11 @@
 			<h2>Soluciones Informáticas</h2>
 		</header>
 
-		<h2 id="offert">20% OFF Docentes</h2>
+		<section id="offert">
+			<h2 >25% OFF Docentes</h2>
+			<p>(Presentando Documentacion que lo valide)</p>
+		</section>
+		
 
 		<div id="Info-warp" class="padding1">
 			<p>Servicio tecnico a domicilio de equipos informáticos de particulares y empresas.</p>
